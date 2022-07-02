@@ -8,7 +8,9 @@
 
 int main(void)
 {
-	for (int first_num = 0; first_num < 10; first_num++)
+	int first_num;
+
+	for (first_num = 0; first_num < 10; first_num++)
 		printf("%d", first_num);
 	putchar('\n');
 
