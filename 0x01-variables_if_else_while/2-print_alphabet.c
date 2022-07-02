@@ -8,15 +8,14 @@
 
 int main(void)
 {
-
-
-	char first_char = 'a';
+	char first_char;
 	char last_char = 'z';
 
-	for (first_char; first_char <= last_char; first_char++)
+	for (first_char = 'a'; first_char <= last_char; first_char++)
 	{
 		putchar(first_char);
 	}
+
 	putchar('\n');
 
 	return (0);
