@@ -3,19 +3,19 @@
 /**
 * _abs - returns the abolute of an number
 *
-* @int: number
+* @j: number
 *
 * Return: int
 */
 
-int _abs(int)
+int _abs(int j)
 {
 
-	if (int < 0)
+	if (j < 0)
 	{
-		return (-1 * int);
+		return (-1 * j);
 	}
 
-	return (int);
+	return (j);
 }
 
