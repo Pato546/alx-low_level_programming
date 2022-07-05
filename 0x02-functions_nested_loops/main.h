@@ -1,0 +1,2 @@
+_putchar(char c);
+
