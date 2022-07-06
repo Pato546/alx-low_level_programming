@@ -9,9 +9,9 @@
 * Return: int
 */
 
-int print_last_digit(int c)
+int print_last_digit(long long int c)
 {
-	long long int last_digit;
+	int last_digit;
 
 	if (c < 0)
 	{
