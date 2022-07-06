@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -10,7 +11,7 @@
 
 int print_last_digit(int c)
 {
-	char last_digit;
+	int last_digit;
 
 	if (c < 0)
 	{
@@ -19,7 +20,7 @@ int print_last_digit(int c)
 
 	last_digit = c % 10;
 
-	_putchar(last_digit);
+	_putchar('0' + last_digit);
 
 	return (last_digit);
 }
