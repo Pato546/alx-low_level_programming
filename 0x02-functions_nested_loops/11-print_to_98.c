@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
 * print_to_98 - displays numbers
@@ -17,21 +16,14 @@ void print_to_98(int n)
 
 	if (n <= 98)
 	{
-		for (start = n; start <= 98; start++)
+		for (start = n; start < 98; start++)
 		{
-			if (start == 98)
-			{
-				printf("%d", start);
-				continue;
-			}
-
 			printf("%d, ", start);
 		}
-		_putchar('\n');
 	}
 	else
 	{
-		for (start = n; start >= 98; start--)
+		for (start = n; start > 98; start--)
 		{
 			if (start == 98)
 			{
@@ -40,8 +32,7 @@ void print_to_98(int n)
 			}
 			printf("%d, ", start);
 		}
-		_putchar('\n');
 	}
-
+	printf("%d\n", start);
 }
 
