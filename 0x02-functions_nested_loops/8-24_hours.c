@@ -28,6 +28,11 @@ void jack_bauer(void)
 					_putchar(l);
 
 					_putchar('\n');
+
+					if (i == '2' && j == '3' && k == '5' && l == '9')
+					{
+						break;
+					}
 				}
 			}
 		}
