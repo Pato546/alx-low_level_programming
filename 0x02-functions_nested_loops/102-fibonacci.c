@@ -16,15 +16,15 @@ int main(void)
 	b = 1;
 	c = a + b;
 
-	printf("%ld, %ld, %ld, ", a, b, c);
+	printf("%ld, %ld, ", b, c);
 
-	for (i = 2; i < 49; i++)
+	for (i = 2; i < 50; i++)
 	{
 		a = b;
 		b = c;
 		c = a + b;
 
-		if (i == 48)
+		if (i == 49)
 		{
 			printf("%ld", c);
 		}
