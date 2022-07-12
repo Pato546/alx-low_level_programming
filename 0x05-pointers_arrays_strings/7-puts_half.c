@@ -4,12 +4,12 @@
 * puts_half - print half of the string;
 * @s: pointer to string
 *
-* Return: int
+* Return: void
 */
 
 void puts_half(char *s)
 {
-	int count, half_str;
+	int count, half_str, i;
 
 	count = 0;
 
@@ -20,10 +20,11 @@ void puts_half(char *s)
 
 	half_str = count % 2 == 0 ? count / 2 : (count - 1) / 2;
 
-	while (s[half_str] != '\0')
+	for (i = half_str; i < count; i++)
 	{
 		_putchar(s[half_str]);
-		half_str++;
 	}
+
+	_putchar('\n');
 }
 
