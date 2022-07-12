@@ -1,10 +1,11 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 * rev_string - print string in reverse order;
 * @s: pointer to string
 *
-* Return: int
+* Return: void
 */
 
 void rev_string(char *s)
@@ -24,7 +25,7 @@ void rev_string(char *s)
 	{
 		temp = s[i];
 		s[i] = s[str_len - i];
-		s[str_len - 1] = temp;
+		s[str_len - i] = temp;
 	}
 
 }
