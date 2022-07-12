@@ -18,8 +18,7 @@ void puts_half(char *s)
 		count++;
 	}
 
-	half_str = count / 2;
-	/* half_str = count % 2 == 0 ? count / 2 : (count - 1) / 2; */
+	half_str = count % 2 == 0 ? count / 2 : (count - 1) / 2;
 
 	for (i = half_str; i < count; i++)
 	{
