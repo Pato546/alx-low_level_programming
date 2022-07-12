@@ -13,10 +13,9 @@ int print_rev(char *s)
 
 	str_len = 0;
 
-	while (*s != '\0')
+	while (s[str_len] != '\0')
 	{
 		str_len++;
-		s++;
 	}
 
 	str_len -= 1;
