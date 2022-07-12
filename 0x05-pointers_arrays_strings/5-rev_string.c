@@ -1,5 +1,3 @@
-#include "main.h"
-#include <stdio.h>
 
 /**
 * rev_string - print string in reverse order;
@@ -19,13 +17,12 @@ void rev_string(char *s)
 		str_len++;
 	}
 
-	str_len -= 1;
 
 	for (i = 0; i < str_len / 2; i++)
 	{
 		temp = s[i];
-		s[i] = s[str_len - i];
-		s[str_len - i] = temp;
+		s[i] = s[str_len - i - 1];
+		s[str_len - i - 1] = temp;
 	}
 
 }
