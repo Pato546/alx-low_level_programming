@@ -12,7 +12,7 @@ int _strcmp(char *s1, char *s2)
 
 	counter = 0;
 
-	for (i = 0; s1[i] && s2[i] != '\0'; i++)
+	for (i = 0; s1[i] && s2[i]; i++)
 		counter += s1[i] - s2[i];
 
 	return (counter);
