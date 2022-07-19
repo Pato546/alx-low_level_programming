@@ -1,4 +1,3 @@
-#include <stdio.h>
 
 /**
 * _strchr - Returns pointer to the char in pointer
@@ -18,14 +17,14 @@ char *_strchr(char *s, char c)
 		s_len++;
 	}
 
-	for (i = 0; s[i] < s_len; i++)
+	for (i = 0; i < s_len; i++)
 	{
 		if (s[i] == c)
 		{
-			return (s[i]);
+			return (s + i);
 		}
 	}
 
-	return (NULL);
+	return (s + i);
 }
 
