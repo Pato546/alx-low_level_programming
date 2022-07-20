@@ -11,7 +11,7 @@ void print_chessboard(char (*a)[8])
 {
 	int i, j;
 
-	int sizeof_arr = sizeof(arr);
+	int sizeof_arr = sizeof(a);
 
 	int row = sizeof_arr / (8 * sizeof(char));
 
