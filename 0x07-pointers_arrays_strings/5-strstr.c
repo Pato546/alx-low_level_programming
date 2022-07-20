@@ -1,4 +1,3 @@
-#include <stdio.h>
 
 /**
 * strstr - finds substring
@@ -34,7 +33,7 @@ char *strstr(char *haystack, char *needle)
 				}
 				else
 				{
-					return (NULL);
+					return ('\0');
 				}
 			}
 
@@ -46,6 +45,6 @@ char *strstr(char *haystack, char *needle)
 		return (haystack + start_of_pointer);
 	}
 
-	return (NULL);
+	return ('\0');
 }
 
