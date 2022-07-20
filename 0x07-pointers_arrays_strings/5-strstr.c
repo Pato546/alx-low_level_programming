@@ -1,12 +1,12 @@
 
 /**
-* strstr - finds substring
+* _strstr - finds substring
 * @haystack: pointer 1
 * @needle: pointer 2
 * Return: pointer
 */
 
-char *strstr(char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
 
 	unsigned int i, j, start_of_pointer, needle_len, match_len;
