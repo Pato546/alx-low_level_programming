@@ -39,6 +39,6 @@ int is_prime_number(int n)
 		return (1);
 	}
 
-	return check_modulo(n, 2);
+	return (check_modulo(n, 2));
 }
 
